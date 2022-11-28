@@ -20,7 +20,6 @@ for (let x of btn) {
 the appropriate key to the entry. Once enter is pressed the formula will
 be evaluated */
 window.addEventListener("keydown", function (e) {
-  console.log(e);
   if (
     e.keyCode === 57 ||
     e.keyCode === 56 ||
@@ -43,7 +42,6 @@ window.addEventListener("keydown", function (e) {
     e.keyCode === 116 ||
     e.keyCode === 191
   ) {
-    console.log(e.key);
     entry.append(e.key);
   }
   if (e.code === "Equal" && e.key === "+") {
